@@ -1,0 +1,31 @@
+{
+    "name":         "tiltnyc.net"
+  , "description":  "live event app for tilt"
+  , "version":      "0.0.1"
+  , "author":       "tiltnyc (http://github.com/tiltnyc)"
+  , "contributors": [
+      {
+        "name": "justin j. moses"
+      , "email": "justinjmoses@gmail.com"
+      }
+    , {
+        "name": "jon storer"
+      , "email": "jonathon.scott.storer@gmail.com"
+      }
+    , {
+        "name": "alex kehayias"
+      , "email": "alex.kehayias@gmail.com"
+      }
+    ]
+  , "engines": {
+      "node"        : "0.8.7"
+    , "npm"         : "1.1.41"
+    }
+  , "devDependencies": {
+    "stylus"            : ">= 0.13.7"
+  }
+  , "dependencies": {
+    "coffee-script"     : ">= 1.3.3"
+  , "connect"           : "latest"
+  }
+}

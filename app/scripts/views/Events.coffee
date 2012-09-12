@@ -1,4 +1,4 @@
-define ['text!./events.html'], (template) ->
+define ['text!/templates/events.html'], (template) ->
   Backbone.View.extend
     render: ->
       @$el.html template

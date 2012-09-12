@@ -1,7 +1,7 @@
 require.config
   paths: 
     text: '/js/3rd/require.text'
-  baseUrl: '/js/compiled'
+  baseUrl: '/js'
 
 define ['./Router', './views/Header'], (Router, Header) ->
   new Header
@@ -12,5 +12,5 @@ define ['./Router', './views/Header'], (Router, Header) ->
     new klazz
       el: '#main-content'
     .render()  
-    
+
   Backbone.history.start()

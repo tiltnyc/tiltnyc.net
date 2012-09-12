@@ -8,8 +8,8 @@ runCommand = (name, args...) ->
   proc.on          'exit', (status) -> process.exit(1) if status isnt 0
 
 task 'watch', 'Watch source files and build JS & CSS', (options) ->
-  runCommand 'coffee', '-wc', '--lint', '-o', 'static/js', 'app/scripts/'
-  runCommand 'stylus', '-w', 'app/styles', '-o', 'static/css'
+  runCommand 'coffee', '-wc', '--lint', '-o', 'static/js/tilt', 'app/scripts/'
+  runCommand 'stylus', '-w', 'app/styles', '-o', 'static/css/tilt'
 
 task 'test', 'Run the testing suite', (options) ->
   runCommand './node_modules/mocha/bin/mocha', '--compilers', 'coffee:coffee-script', '--colors', '--recursive'

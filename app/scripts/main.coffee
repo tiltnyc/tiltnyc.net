@@ -1,7 +1,7 @@
 require.config
   paths: 
     text: '/js/3rd/require.text'
-  baseUrl: '/js'
+  baseUrl: '/js/tilt'
 
 define ['./Router', './views/Header'], (Router, Header) ->
   new Header

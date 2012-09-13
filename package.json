@@ -26,6 +26,6 @@
   }
   , "dependencies": {
     "coffee-script"     : ">= 1.3.3"
-  , "connect"           : "latest"
+  , "express"           : "3.x"
   }
 }

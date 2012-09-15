@@ -8,6 +8,7 @@ define ['models/Event'], (Event) ->
         success: () => done @splitByDate()
 
     splitByDate: (date = new Date()) ->
+      asJSON = @toJSON()
       result =  
-        before: (m for m in @models when new Date(m.get("date")) < date)
-        after: (m for m in @models when new Date(m.get("date")) >= date)
+        before: (m for m in asJSON when new Date(m.date) < date)
+        after: (m for m in asJSON when new Date(m.date) >= date)

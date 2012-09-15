@@ -1,1 +1,24 @@
-<h1>Events!</h1>
+<h1>our events</h1>
+
+
+<h3>upcoming</h3>
+
+<% _.each(upcoming, function(evt) { %>
+
+  <h4><%= evt.name %></h4>
+  <div><%= evt.date %></div>
+  <div><%= evt.description %></div>
+
+<% }) %>
+
+
+
+<h3>past events</h3>
+
+<% _.each(past, function(evt) { %>
+
+  <h4><%= evt.name %></h4>
+  <div><%= evt.date %></div>
+  <div><%= evt.description %></div>
+
+<% }) %>

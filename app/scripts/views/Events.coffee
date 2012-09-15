@@ -1,5 +1,9 @@
-define ['text!/templates/events.html'], (template) ->
+define ['text!/templates/events.html', 'collections/Events'], (template, Events) ->
   Backbone.View.extend
+    initialize: ->
+      @allEvents = new Events()
+
     render: ->
-      @$el.html template
+      @allEvents.populate (events) =>
+        @$el.html _.template(template, {upcoming: events.after, past: events.before})
       @

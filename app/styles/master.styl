@@ -1,14 +1,21 @@
-primary = #001845
+primary = #1a1a1a
 secondary = blue
 highlight = #F58606
 
 body
   padding 0
   margin 0
+  font-family "ff-meta-serif-web-pro", helvetica, serif
 
 h1
+  font-family "ff-meta-serif-web-pro", helvetica, serif
+  font-size 48px
+  line-height 56px
+  font-weight 100
   color primary
   text-align center
+  &.main-headline
+    margin-top 80px  
 
 h2
   margin-top 30px
@@ -28,23 +35,17 @@ h2
   background url(/images/logo.png) no-repeat center
   width 200px
   height 95px
+  &:hover
+    box-shadow none
   span
     display none
-
-.main-headline
-  display block
-  position absolute
-  right 40%
-  padding-top 80px
 
 .video-placeholder
   background url(/images/video-placeholder.jpg) no-repeat center
   height 450px
-  border-left 1px solid white
 
 .nav-container
-  background #A4D7F4
-  border-bottom 1px #eeeeee
+  border-bottom 1px solid #eeeeee
   whitespace nowrap
 
 // Bootstrap navbar overrides
@@ -70,8 +71,14 @@ h2
         a
           color primary
           text-shadow none
+          font-size 18px
+          font-family "pt-sans-narrow", helvetica, serif
+          &:hover
+            box-shadow 0px -2px 0px #999999
+
   .active
     text-decoration underline
+    box-shadow 0px -2px 0px #999999
     
 // Bootstrap Scaffolding Overrides
 .row-fluid
@@ -92,10 +99,6 @@ h2
   &:hover
     background #EF5A24
   &.homepage
-    margin-right 10%
-    margin-top 320px
-    right 30%
-    position absolute
     padding 15px 60px
     font-size 18px
     font-weight bold

@@ -11,11 +11,13 @@ events =
   name: "fall 2012"
   theme: "unknown"
   date: new Date(2012,8,29)
+  description: Faker.Lorem.paragraph()
 ,
   _id: genId()
   name: "spring 2012"
   theme: "nyc rental market"
   date: new Date(2012,3,21)
+  description: Faker.Lorem.paragraph()
 ]
 
 teams = []

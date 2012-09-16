@@ -6,6 +6,8 @@ body
   padding 0
   margin 0
   font-family "ff-meta-serif-web-pro", helvetica, serif
+  font-size 18px
+  line-height 28px
 
 h1
   font-family "ff-meta-serif-web-pro", helvetica, serif
@@ -30,6 +32,13 @@ h2
   background url(/images/under.png) no-repeat bottom
   padding-bottom 10px
 
+h3
+  margin 10px 0
+  line-height 32px
+
+p
+  margin-top: 30px
+
 #logo-container
   height 1px
 
@@ -37,6 +46,7 @@ h2
   background url(/images/logo.png) no-repeat center
   width 200px
   height 95px
+  margin-right 30px
   &:hover
     box-shadow none
   span
@@ -89,12 +99,6 @@ h2
 .row-fluid
   padding 0
   margin 0
-  .span4
-    margin-left -20px
-    width 35.5%
- .container-fluid
-  padding 0
-  margin-left -20px
 
 // Bootstrap base css overrides
 .btn
@@ -139,3 +143,15 @@ h2
   text-align center
   color #eeeeee
   font-style italic
+
+.headshot-container
+  display inline-block
+  width 24%
+  .img-polaroid
+    width 150px
+  .headshot
+    width 100px
+  p
+    margin-top 10px
+    font-size 14px
+    line-height 21px

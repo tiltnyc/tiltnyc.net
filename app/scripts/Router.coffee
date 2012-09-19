@@ -13,8 +13,8 @@ define [
     initialize: (options) ->
       @views =
         home: Home
-        events: Events
-        teams: Teams
+        #events: Events
+        #teams: Teams
 
     goto: (name, action) ->
       klazz = @views[name] ? @views.home

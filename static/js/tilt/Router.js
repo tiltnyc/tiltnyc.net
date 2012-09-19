@@ -9,9 +9,7 @@
       },
       initialize: function(options) {
         return this.views = {
-          home: Home,
-          events: Events,
-          teams: Teams
+          home: Home
         };
       },
       goto: function(name, action) {

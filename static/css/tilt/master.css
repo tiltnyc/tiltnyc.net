@@ -152,7 +152,12 @@ p {
   color: #eee;
   font-style: italic;
 }
+.organizers .headshot-container {
+  width: 31%;
+}
 .headshot-container {
+  vertical-align: top;
+  margin-top: 30px;
   display: inline-block;
   width: 24%;
 }

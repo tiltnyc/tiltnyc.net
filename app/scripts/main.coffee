@@ -1,8 +1,8 @@
 require.config
   paths: 
     text: '/js/3rd/require.text'
-    underscore: '/js/3rd/underscore'
-    backbone: '/js/3rd/backbone'
+    underscore: '/js/3rd/underscore.min'
+    backbone: '/js/3rd/backbone.min'
   baseUrl: '/js/tilt'    
   shim:
     underscore:

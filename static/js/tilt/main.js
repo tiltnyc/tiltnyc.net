@@ -2,23 +2,19 @@
 
   require.config({
     paths: {
-      text: '/js/3rd/require.text',
-      underscore: '/js/3rd/underscore.min',
-      backbone: '/js/3rd/backbone.min'
+      text: '/js/3rd/require.text'
     },
-    baseUrl: '/js/tilt',
-    shim: {
-      underscore: {
+    baseUrl: '/js/tilt'
+    /*shim:
+      underscore:
         exports: '_'
-      },
-      backbone: {
-        deps: ['underscore'],
+      backbone:
+        deps: ['underscore']
         exports: 'Backbone'
-      }
-    }
+    */
   });
 
-  define(['backbone', './Router', './views/Header'], function(Backbone, Router, Header) {
+  define(['./Router', './views/Header'], function(Router, Header) {
     new Header({
       el: 'body'
     }).render();

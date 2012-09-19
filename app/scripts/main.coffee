@@ -1,17 +1,17 @@
 require.config
   paths: 
     text: '/js/3rd/require.text'
-    underscore: '/js/3rd/underscore.min'
-    backbone: '/js/3rd/backbone.min'
+    #underscore: '/js/3rd/underscore.min'
+    #backbone: '/js/3rd/backbone.min'
   baseUrl: '/js/tilt'    
-  shim:
+  ###shim:
     underscore:
       exports: '_'
     backbone:
       deps: ['underscore']
-      exports: 'Backbone'
+      exports: 'Backbone'###
 
-define ['backbone', './Router', './views/Header'], (Backbone, Router, Header) ->
+define ['./Router', './views/Header'], (Router, Header) ->
   new Header
     el: 'body'
   .render()

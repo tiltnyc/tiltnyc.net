@@ -1,0 +1,174 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "ff-meta-serif-web-pro", helvetica, serif;
+  font-size: 18px;
+  line-height: 28px;
+}
+h1 {
+  font-family: "ff-meta-serif-web-pro", helvetica, serif;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 100;
+  color: #1a1a1a;
+  text-align: center;
+}
+h1.main-headline {
+  margin-top: 120px;
+  text-transform: capitalize;
+  color: #fff;
+}
+h2 {
+  margin-top: 30px;
+  font-family: "pt-sans-narrow", helvetica;
+  font-size: 28px;
+  color: #1a1a1a;
+  text-align: center;
+  text-transform: uppercase;
+  background: #00f;
+  background: url("/images/under.png") no-repeat bottom;
+  padding-bottom: 10px;
+}
+h3 {
+  margin: 10px 0;
+  line-height: 32px;
+}
+p {
+  margin-top: 30px;
+}
+#logo-container {
+  height: 1px;
+}
+#logo {
+  background: url("/images/logo.png") no-repeat center;
+  width: 200px;
+  height: 95px;
+  margin-right: 30px;
+}
+#logo:hover {
+  box-shadow: none;
+}
+#logo span {
+  display: none;
+}
+.video-placeholder {
+  background: url("/images/video-placeholder.jpg") no-repeat center;
+  height: 200px;
+  border-top: 1px solid #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+  background-size: 100%;
+}
+.nav-container {
+  whitespace: nowrap;
+  box-shadow: 0px 2px 13px #999;
+}
+.navbar {
+  margin: 0;
+  display: table;
+  margin: 0 auto;
+}
+.navbar .navbar-inner {
+  text-align: center;
+  min-height: 80px;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+.navbar .navbar-inner .nav {
+  white-space: nowrap;
+}
+.navbar .navbar-inner ul {
+  padding-top: 20px;
+  text-align: center;
+}
+.navbar .navbar-inner ul li {
+  font-family: "myriad-pro", helvetica;
+  text-transform: uppercase;
+  padding: 0 25px 0 25px;
+}
+.navbar .navbar-inner ul li a {
+  color: #1a1a1a;
+  text-shadow: none;
+  font-size: 18px;
+  font-family: "pt-sans-narrow", helvetica, serif;
+}
+.navbar .navbar-inner ul li a:hover {
+  box-shadow: 0px -2px 0px #999;
+}
+.navbar .active {
+  text-decoration: underline;
+  box-shadow: 0px -2px 0px #999;
+}
+.row-fluid {
+  padding: 0;
+  margin: 0;
+}
+.btn {
+  border-radius: 3px;
+  background: #f58606;
+  color: #fff;
+  text-shadow: none;
+}
+.btn:hover {
+  background: #ef5a24;
+  color: #fff;
+}
+.btn.homepage {
+  padding: 15px 60px;
+  margin-top: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-shadow: 0px 1px #1a1a1a;
+}
+.btn-navbar.homepage {
+  background: none;
+  float: left;
+  position: absolute;
+  top: 18px;
+  left: 20px;
+}
+.main-background {
+  background: url("/images/main-background.jpg") no-repeat top;
+  background-size: 100%;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+.play {
+  background: url("/images/play.png") no-repeat center;
+  height: 125px;
+  width: 200px;
+  display: block;
+  margin-bottom: 60px;
+}
+.play:hover {
+  background: url("/images/play-hover.png") no-repeat center;
+  text-decoration: none;
+}
+.promo-text {
+  font-size: 21px;
+  line-height: 28px;
+  text-align: center;
+  color: #eee;
+  font-style: italic;
+}
+.organizers .headshot-container {
+  width: 31%;
+}
+.headshot-container {
+  vertical-align: top;
+  margin-top: 30px;
+  display: inline-block;
+  width: 24%;
+}
+.headshot-container .img-polaroid {
+  width: 150px;
+}
+.headshot-container .headshot {
+  width: 100px;
+}
+.headshot-container p {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 21px;
+}

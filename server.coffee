@@ -9,4 +9,5 @@ require('./routes')(app)
 app.use express.errorHandler()
 app.locals.pretty = true
 
-app.listen 3000
+port = process.env.PORT || 3000
+app.listen port

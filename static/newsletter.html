@@ -1,0 +1,71 @@
+<html>
+<head><!-- Begin MailChimp Signup Form -->
+<link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+  #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+  /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+  html, body, form { margin: 0px;}
+  .invalid-email {
+    font-size: 80%;
+    color: red;
+  }
+  input.email {
+    display: inline !important;
+    margin-right: 1em !important;
+    width: 20em !important;
+  }
+  .loader
+  {
+    width: 100%;
+    height: 50px;
+    background: url(/images/loader.gif) center no-repeat;
+  }
+  #thanks { font-family: "ff-meta-serif-web-pro", helvetica, serif;}
+</style>
+<script language="javascript" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js">
+</script>
+</head>
+<body>
+<div id="thanks" style="display:none">
+  <p>thanks!  we're sending you an email to <strong class="to-email">email</strong> to confirm.</p>
+  <div class="loader"></div>
+</div>
+<div id="mc_embed_signup">
+<form action="http://tiltnyc.us4.list-manage1.com/subscribe/post?u=c2a23d4267d5f991379892ad6&amp;id=ea90fbd6b5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+  <label for="mce-EMAIL">Subscribe to our mailing list</label>
+  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+  &nbsp<span class="invalid-email" ></span>
+  <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+</body>
+<script type="text/javascript">
+  $("form#mc-embedded-subscribe-form").on("submit", function(evt) {
+    evt.preventDefault();
+    
+    var uri = $(this).attr("action");
+    var email = $(this).find("input.email").val();
+    if (!email.match(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,6}$/i))
+    {
+      $(this).find(".invalid-email").html("ah, that doesn't look like an email address").show('blind');
+      return;
+    }
+    try {
+      $.ajax({url: uri, type: "POST", dataType: "jsonp", data: {EMAIL: email}}).done();
+    } catch (err) { //expected; 
+    }
+    $('#mc_embed_signup').hide();
+    $('#thanks .to-email').html(email);
+    $('#thanks').show('blind');
+
+    setTimeout(function() {
+      parent.$(parent.document).trigger("tiltnyc.close-modal");
+    }, 2500);
+  }).find(".email").on("keyup", function(evt) {
+    $(this).siblings(".invalid-email").hide();
+  });
+</script>
+</html>

@@ -46,7 +46,6 @@ a img {
   background: url("/images/logo.png") no-repeat center;
   width: 200px;
   height: 95px;
-  margin-right: 30px;
 }
 #logo:hover {
   box-shadow: none;
@@ -66,7 +65,6 @@ a img {
   box-shadow: 0px 2px 13px #999;
 }
 .navbar {
-  margin: 0;
   display: table;
   margin: 0 auto;
 }
@@ -88,6 +86,9 @@ a img {
   font-family: "myriad-pro", helvetica;
   text-transform: uppercase;
   padding: 0 25px 0 25px;
+}
+.navbar .navbar-inner ul li:last-child {
+  padding: 0;
 }
 .navbar .navbar-inner ul li a {
   color: #1a1a1a;

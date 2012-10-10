@@ -2,7 +2,8 @@ define [
   "./views/Home",
   "./views/Events"
   "./views/Teams"
-], (Home, Events, Teams) ->
+  "./views/Social"
+], (Home, Events, Teams, Social) ->
   Backbone.Router.extend
 
     routes:
@@ -15,6 +16,7 @@ define [
         home: Home
         #events: Events
         #teams: Teams
+        social: Social
 
     goto: (name, action) ->
       klazz = @views[name] ? @views.home

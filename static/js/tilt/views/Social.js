@@ -1,6 +1,6 @@
 (function() {
 
-  define(['text!/templates/teams.html'], function(template) {
+  define(['text!/templates/social.html'], function(template) {
     return Backbone.View.extend({
       render: function() {
         this.$el.html(template);

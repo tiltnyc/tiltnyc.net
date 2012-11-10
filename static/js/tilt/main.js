@@ -15,13 +15,15 @@
   });
 
   define(['./Router', './views/Header'], function(Router, Header) {
-    new Header({
+    var header;
+    header = new Header({
       el: 'body'
     }).render();
     new Router().on('viewChange', function(klazz, name, action) {
-      return new klazz({
+      new klazz({
         el: '#main-content'
       }).render();
+      return header.highlight(name);
     });
     return Backbone.history.start();
   });

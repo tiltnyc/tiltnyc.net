@@ -12,7 +12,7 @@ require.config
       exports: 'Backbone'###
 
 define ['./Router', './views/Header'], (Router, Header) ->
-  new Header
+  header = new Header
     el: 'body'
   .render()
 
@@ -20,5 +20,6 @@ define ['./Router', './views/Header'], (Router, Header) ->
     new klazz
       el: '#main-content'
     .render()  
+    header.highlight name
 
   Backbone.history.start()

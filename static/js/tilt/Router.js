@@ -10,6 +10,7 @@
       initialize: function(options) {
         return this.views = {
           home: Home,
+          events: Events,
           social: Social
         };
       },

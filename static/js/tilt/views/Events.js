@@ -6,13 +6,7 @@
         return this.allEvents = new Events();
       },
       render: function() {
-        var _this = this;
-        this.allEvents.populate(function(events) {
-          return _this.$el.html(_.template(template, {
-            upcoming: events.after,
-            past: events.before
-          }));
-        });
+        this.$el.html(_.template(template));
         return this;
       }
     });

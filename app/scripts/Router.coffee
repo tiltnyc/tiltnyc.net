@@ -14,8 +14,7 @@ define [
     initialize: (options) ->
       @views =
         home: Home
-        #events: Events
-        #teams: Teams
+        events: Events
         social: Social
 
     goto: (name, action) ->
